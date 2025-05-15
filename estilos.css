@@ -1,0 +1,154 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    background-image: 
+                url("calculadora de magnitudes fissicas-IMG.jpg");
+                display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    z-index: 10;
+}
+
+.img-izquierda,
+.img-derecha {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo-calculadora {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(18, 2, 250, 0.96);
+}
+
+.calculator-container {
+    background: rgba(249, 246, 248, 0.915);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgb(0, 0, 0);
+    width: 400px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(18, 2, 250, 0.96);
+}
+
+h1 {
+    margin-bottom: 5px;
+    color: rgba(0, 1, 17, 0.94);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+h2 {
+    margin-bottom: 2px;
+    color: #030394;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #030394;
+}
+
+select,
+input,
+button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid rgba(1, 1, 0, 0.95);
+    transition: all 0.3s ease;
+}
+
+input[type="number"] {
+    background-color: hsl(330, 37%, 97%);
+}
+
+select:focus,
+input:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(18, 2, 250, 0.96);
+}
+
+button {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    padding: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #030394;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.resultado {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #030394;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #f6f7fb;
+    border-radius: 10px;
+    border-left: 5px solid #030394;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.99);
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

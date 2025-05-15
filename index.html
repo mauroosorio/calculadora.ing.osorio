@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Magnitudes Fisicas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="top-images">
+        <img src="ied sagrada familia.jpg" alt="sagrada" class="img-izquierda">
+        <img src="UCC imagen.png" alt="ucc" class="img-derecha">
+    </div>
+    <div class="calculator-container">
+ <img src="logotipo-calculadora_10250-2607.png" alt="logotipo calculadora" class="logo-calculadora">
+        <h1>Calculadora de Magnitudes Fisicas</h1>
+        <h2> Institucion Educativa la Sagrada Familia</h2>
+        
+        <select id="calculoSeleccionado" onChange="mostrarFormulario()">
+            <option value="">Seleccione un cálculo</option>
+            <option value="velocidad">Velocidad Media</option>
+            <option value="aceleracion">Aceleración Media</option>
+            <option value="fuerza">Fuerza</option>
+            <option value="trabajo">Trabajo Mecánico</option>
+            <option value="energia">Energía Cinética</option>
+            <option value="epg">Energia potencial gravitacional</option>
+            <option value="densidad">Densidad</option>
+            <option value="presion">Presion</option>
+            <option value="carga">Carga electrica</option>
+            <option value="ohm">Ley de ohm</option>
+        
+        </select>
+
+        <form id="formulario"></form>
+
+        <div id="resultado" class="resultado"></div>
+
+    
+
+        <footer>Diseñado por Ing. Mauro Osorio</footer>
+    </div>
+
+    
+
+    <script src="funciones.js"></script>
+</body>
+</html>
