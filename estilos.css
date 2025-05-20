@@ -43,7 +43,7 @@ html, body {
 }
 
 .calculator-container {
-    background: rgba(249, 246, 248, 0.915);
+    background: rgba(249, 0, 0, 0.915);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgb(0, 0, 0);
